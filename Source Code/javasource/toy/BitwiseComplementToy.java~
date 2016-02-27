@@ -1,0 +1,19 @@
+/*
+ * BitwiseComplementToy.java
+ *
+ * Created on May 31, 2003, 4:12 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class BitwiseComplementToy {
+    
+    /** Creates a new instance of BitwiseComplementToy */
+    public BitwiseComplementToy() {
+    }
+    
+}

@@ -1,0 +1,19 @@
+/*
+ * ProducerConsumerWrongTToy.java
+ *
+ * Created on May 26, 2003, 6:26 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ProducerConsumerWrongTToy {
+    
+    /** Creates a new instance of ProducerConsumerWrongTToy */
+    public ProducerConsumerWrongTToy() {
+    }
+    
+}

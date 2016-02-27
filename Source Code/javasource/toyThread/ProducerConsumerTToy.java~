@@ -1,0 +1,19 @@
+/*
+ * ProducerConsumerTToy.java
+ *
+ * Created on May 26, 2003, 6:15 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ProducerConsumerTToy {
+    
+    /** Creates a new instance of ProducerConsumerTToy */
+    public ProducerConsumerTToy() {
+    }
+    
+}

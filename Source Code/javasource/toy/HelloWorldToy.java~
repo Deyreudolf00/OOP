@@ -1,0 +1,19 @@
+/*
+ * HelloWorldToy.java
+ *
+ * Created on May 25, 2003, 4:02 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class HelloWorldToy {
+    
+    /** Creates a new instance of HelloWorldToy */
+    public HelloWorldToy() {
+    }
+    
+}

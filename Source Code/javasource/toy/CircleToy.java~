@@ -1,0 +1,80 @@
+/*
+ * CircleToy.java
+ *
+ * Created on May 18, 2003, 10:43 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ * Inspired by :
+ *  Java : How to Program
+ *  Deitel Deitel, page 78, exercise 2.19
+ */
+
+public class CircleToy {
+    
+    private double radius;
+    
+    /** Creates a new instance of CircleToy */
+    public CircleToy() {
+        radius = 0.0;
+    }
+    
+    public CircleToy(double radius) {
+        this.radius = radius;
+    }
+    
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+    
+    public double getRadius() {
+        return radius;
+    }
+    
+    public double getDiameter() {
+        return calcDiameter();
+    }
+    
+    public double getCircumference(){
+        return calcCircumference();
+    }
+    
+    public double getArea(){
+        return calcArea();
+    }
+    
+    private double calcDiameter(){
+        return 2 * radius;
+    }
+    
+    private double calcCircumference(){
+        return (Math.PI * 2 * radius);
+    }
+    
+    private double calcArea() {
+        return (Math.PI * radius * radius);
+    }
+    
+    public String toString(){
+        String str =
+            "Lingkaran "+"\n"+
+            "Radius   = "+radius+"\n"+
+            "Diameter = "+calcDiameter()+"\n"+
+            "Keliling = "+calcCircumference()+"\n"+
+            "Luas = "+calcArea();
+        return str;
+    }
+    
+    static void test(){
+        CircleToy c = new CircleToy(10);
+        System.out.println(c);
+    }
+    
+    public static void main(String[] args) {
+        test();
+    }
+}

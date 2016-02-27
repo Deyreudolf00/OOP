@@ -1,0 +1,19 @@
+/*
+ * MemoryBToy.java
+ *
+ * Created on June 1, 2003, 9:20 AM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class MemoryBToy {
+    
+    /** Creates a new instance of MemoryBToy */
+    public MemoryBToy() {
+    }
+    
+}

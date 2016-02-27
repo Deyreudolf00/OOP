@@ -1,0 +1,19 @@
+/*
+ * SLLNode.java
+ *
+ * Created on June 5, 2003, 7:31 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class SLLNode {
+    
+    /** Creates a new instance of SLLNode */
+    public SLLNode() {
+    }
+    
+}

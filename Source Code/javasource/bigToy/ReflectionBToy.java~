@@ -1,0 +1,19 @@
+/*
+ * ReflectionBToy.java
+ *
+ * Created on May 26, 2003, 7:05 AM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ReflectionBToy {
+    
+    /** Creates a new instance of ReflectionBToy */
+    public ReflectionBToy() {
+    }
+    
+}

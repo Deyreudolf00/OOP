@@ -1,0 +1,19 @@
+/*
+ * staticHToy.java
+ *
+ * Created on June 15, 2003, 8:45 AM
+ */
+
+package colToy.hashToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class staticHToy {
+    
+    /** Creates a new instance of staticHToy */
+    public staticHToy() {
+    }
+    
+}

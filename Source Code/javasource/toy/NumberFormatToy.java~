@@ -1,0 +1,19 @@
+/*
+ * NumberFormatToy.java
+ *
+ * Created on May 31, 2003, 3:54 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class NumberFormatToy {
+    
+    /** Creates a new instance of NumberFormatToy */
+    public NumberFormatToy() {
+    }
+    
+}

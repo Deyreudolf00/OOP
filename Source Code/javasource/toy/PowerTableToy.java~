@@ -1,0 +1,53 @@
+/*
+ * PowerTableToy.java
+ *
+ * Created on May 18, 2003, 12:29 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ * Inspired by :
+ *  Java : How to Program
+ *  Deitel Deitel, page 8, exercise 2.33
+ */
+public class PowerTableToy {
+    
+    private int maxNumber;
+    
+    /** Creates a new instance of PowerTableToy */
+    public PowerTableToy() {
+    }
+    
+    public PowerTableToy(int maxNumber){
+        this.maxNumber = maxNumber;
+    }
+    
+    public void setNumber(int maxNumber) {
+        this.maxNumber = maxNumber;
+    }
+    
+    public int getNumber() {
+        return maxNumber;
+    }
+    
+    public void printTable() {
+        System.out.println("Number      Square        Cube");
+        for(int i=0;i<maxNumber;i++){
+            System.out.println(i+"         "+(i*i)+"             "+(i*i*i));
+        }
+        
+    }
+    
+    static void test(){
+        PowerTableToy p = new PowerTableToy(11);
+        p.printTable();
+    }
+    
+    public static void main(String[] args){
+        test();
+    }
+    
+}

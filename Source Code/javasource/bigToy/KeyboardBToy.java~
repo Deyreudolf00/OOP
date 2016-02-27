@@ -1,0 +1,19 @@
+/*
+ * KeyboardBToy.java
+ *
+ * Created on June 1, 2003, 9:03 PM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class KeyboardBToy {
+    
+    /** Creates a new instance of KeyboardBToy */
+    public KeyboardBToy() {
+    }
+    
+}

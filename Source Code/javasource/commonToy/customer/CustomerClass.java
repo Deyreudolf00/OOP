@@ -1,0 +1,35 @@
+/*
+ * CustomerClass.java
+ *
+ * Created on May 7, 2003, 9:48 PM
+ */
+
+package commonToy.customer;
+
+/**
+ *
+ * @author  unknown
+ */
+public class CustomerClass {
+    
+    private String customerID;
+    
+    private int level;
+    
+    /** Creates a new instance of CustomerClass */
+    public CustomerClass() {
+    }
+    
+    public void setCustomerID(String newCustomerID) {
+    }
+    
+    public void setLevel(int newLevel) {
+    }
+    
+    public String getCustomerID() {
+    }
+    
+    public int getLevel() {
+    }
+    
+}

@@ -1,0 +1,16 @@
+package colToy;
+
+/*
+ * Iterator.java
+ *
+ * Created on June 6, 2003, 8:23 PM
+ */
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public interface Iterator {
+    public boolean hasNext();
+    public Object next();
+}

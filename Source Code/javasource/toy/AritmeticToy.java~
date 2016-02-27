@@ -1,0 +1,19 @@
+/*
+ * AritmeticToy.java
+ *
+ * Created on May 31, 2003, 4:13 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class AritmeticToy {
+    
+    /** Creates a new instance of AritmeticToy */
+    public AritmeticToy() {
+    }
+    
+}

@@ -1,0 +1,19 @@
+/*
+ * StringConversionToy.java
+ *
+ * Created on June 1, 2003, 7:00 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class StringConversionToy {
+    
+    /** Creates a new instance of StringConversionToy */
+    public StringConversionToy() {
+    }
+    
+}

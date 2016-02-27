@@ -1,0 +1,95 @@
+/*
+ * AQueueToy.java
+ *
+ * Created on June 6, 2003, 6:32 AM
+ */
+
+package colToy;
+import java.util.NoSuchElementException;
+import colToy.Queue;
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class AQueueToy implements Queue {
+    private Object[] elements;
+    private int capacity;
+    private int front = 0;
+    private int rear = 0;
+    private int length = 0;
+    
+    /** Creates a new instance of AQueueToy */
+    public AQueueToy(int capacity) {
+        this.capacity = capacity;
+        elements = new Object[capacity];
+    }
+    
+    public void add(Object o) {
+        length++;
+        if(length == capacity) expand();
+        elements[rear] = o;
+        rear = (rear+1)%capacity;
+    }
+    
+    private void reset(){
+        elements = new Object[capacity];
+        front = 0;
+        rear = 0;
+        length = 0;
+    }
+    
+    public void clear() {
+        reset();
+    }
+    
+    public Object get() {
+        if (length == 0) throw new NoSuchElementException();
+        return elements[front];
+    }
+    
+    public boolean isEmpty() {
+        return (length == 0);
+    }
+    
+    public void remove() {
+        if (length == 0) throw new NoSuchElementException();
+        elements[front] = null;
+        front = (front+1) % capacity;
+        length--;
+    }
+    
+    public int size() {
+        return length;
+    }
+    
+    private void expand(){
+        capacity = capacity + 10 + (int)(.1 * capacity);
+        Object[] newElements = new Object[capacity];
+        for(int i=0;i<length;i++) newElements[i] = elements[i];
+        elements = newElements;
+    }
+    
+    static void test01(){
+        AQueueToy t = new AQueueToy(15);
+        for(int i=0;i<10;i++) t.add(new Integer(i));
+        for(int i=0;i<10;i++) {
+            System.out.println(t.get());
+            t.remove();
+        }
+    }
+    
+    static void test02(){
+        AQueueToy t = new AQueueToy(5);
+        for(int i=0;i<10;i++) t.add(new Integer(i));
+        for(int i=0;i<10;i++) {
+            System.out.println(t.get());
+            t.remove();
+        }
+    }
+    
+    public static void main(String args[]){
+        //test01();
+        test02();
+    }
+
+}

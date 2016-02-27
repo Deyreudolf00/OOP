@@ -1,0 +1,78 @@
+/*
+ * StackDemoToy.java
+ *
+ * Created on May 26, 2003, 4:07 AM
+ */
+
+package toy;
+import java.io.DataInputStream;
+import java.util.Stack;
+import java.util.StringTokenizer;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+    ===========================================================================    
+    Filename    : 
+    Created by  : Bambang Hariyanto,Ir.,MT.
+    Date        : March 1, 2002
+    Description :
+    
+    ===========================================================================    
+    Compiling & execution Instructions:         
+	prompt\> javac StackDemoToy         
+	prompt\> java StackDemoToy    
+    ===========================================================================    
+    Approved by  : 
+    Tested by    :
+    Modification :    
+    ===========================================================================    
+
+ */
+public class StackDemoToy {
+    
+    /** Creates a new instance of StackDemoToy */
+    public StackDemoToy() {
+    }
+    
+    public static void invertSentence(String theSentence)
+    {
+        StringTokenizer st=new StringTokenizer(theSentence);
+        Stack stack=new Stack();
+        while (st.hasMoreTokens())
+            stack.push(st.nextToken());
+        while (!stack.empty())
+            System.out.print((String)stack.pop()+" ");
+        System.out.println();
+    }
+    
+    static private String inputSentence () throws java.io.IOException{
+        DataInputStream dis=new DataInputStream(System.in);
+
+        System.out.println("Masukkan satu kalimat: ");
+        return(dis.readLine());
+    }
+    
+    static void test(){
+	try {
+	    invertSentence(inputSentence());	
+	} catch (Exception e) {
+	    System.out.println(e.getMessage());
+	}
+    }
+    
+    static void test2(){
+	Stack s = new Stack();
+	s.push("Satu");
+	s.push("Dua");
+	s.push("Tiga");
+	System.out.println("Puncak stack: "+s.peek());
+	while (!s.empty())
+	    System.out.println(s.pop());
+    }
+
+    public static void main(String[] args) {
+        test();
+        test2();
+    }
+}

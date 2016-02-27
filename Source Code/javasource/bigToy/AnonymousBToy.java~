@@ -1,0 +1,19 @@
+/*
+ * AnonymousBToy.java
+ *
+ * Created on May 26, 2003, 6:50 AM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class AnonymousBToy {
+    
+    /** Creates a new instance of AnonymousBToy */
+    public AnonymousBToy() {
+    }
+    
+}

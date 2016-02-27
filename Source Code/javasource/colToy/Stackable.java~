@@ -1,0 +1,19 @@
+/*
+ * Stackable.java
+ *
+ * Created on June 6, 2003, 5:44 AM
+ */
+
+package colToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public interface Stackable {
+    public boolean isEmpty();
+    public void clear();
+    public void add(Object o);
+    public Object get();
+    public void remove();
+}

@@ -1,0 +1,24 @@
+/*
+ * Listable.java
+ *
+ * Created on June 6, 2003, 3:33 PM
+ */
+
+package colToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public interface Listable {
+    public boolean isEmpty();
+    public Object get(int i);
+    public boolean equals(Listable l);
+    public void clear();
+    public void set(int i, Object o);
+    public void add(int i, Object o);
+    public void add(Object o);
+    public void addAll(Listable l);
+    public void remove(int i);
+    public Iterator iterator();
+}

@@ -1,0 +1,19 @@
+/*
+ * ScopeToy.java
+ *
+ * Created on May 31, 2003, 4:39 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ScopeToy {
+    
+    /** Creates a new instance of ScopeToy */
+    public ScopeToy() {
+    }
+    
+}

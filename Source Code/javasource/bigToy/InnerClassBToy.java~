@@ -1,0 +1,19 @@
+/*
+ * InnerClassBToy.java
+ *
+ * Created on May 26, 2003, 6:54 AM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class InnerClassBToy {
+    
+    /** Creates a new instance of InnerClassBToy */
+    public InnerClassBToy() {
+    }
+    
+}

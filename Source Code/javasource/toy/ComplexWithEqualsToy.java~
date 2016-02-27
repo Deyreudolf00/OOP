@@ -1,0 +1,62 @@
+/*
+ * ComplexWithEqualsToy.java
+ *
+ * Created on May 19, 2003, 3:16 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ComplexWithEqualsToy {
+    private double re;
+    private double im;
+
+    ComplexWithEqualsToy (double newRe, double newIm) {
+        re = newRe;
+        im = newIm;
+    }
+    
+    static void test(){
+         ComplexWithEqualsToy a = new ComplexWithEqualsToy(1.0, 2.0);
+         ComplexWithEqualsToy b = new ComplexWithEqualsToy(1.0, 2.0);
+         ComplexWithEqualsToy c = new ComplexWithEqualsToy(2.0, 1.0);
+
+         if (a.equals(b))
+            System.out.println("a sama dengan b");
+         else
+            System.out.println("a tidak sama dengan b");
+
+         System.out.println();
+
+         if (a.equals(c))
+            System.out.println("a sama dengan c");
+         else
+            System.out.println("a tidak sama dengan c");
+    }
+
+    public static void main (String args[]) {
+        test();
+    }
+
+    public boolean equals (Object o) {
+        if (o == null) // Cautious
+            return false;
+      
+        if (o == this) // Reflexive
+            return true;
+
+        if (!(o instanceof ComplexWithEqualsToy))   // Castable to this class?
+            return false;
+
+        ComplexWithEqualsToy otherO = (ComplexWithEqualsToy) o;  // Cast to ComplexWithEqualsToy
+
+      // Compare field by field
+        if ((re == otherO.re) && (im == otherO.im))
+            return true;
+        else
+            return false;
+    }
+}

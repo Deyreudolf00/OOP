@@ -1,0 +1,19 @@
+/*
+ * JoinTToy.java
+ *
+ * Created on May 26, 2003, 6:43 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class JoinTToy {
+    
+    /** Creates a new instance of JoinTToy */
+    public JoinTToy() {
+    }
+    
+}

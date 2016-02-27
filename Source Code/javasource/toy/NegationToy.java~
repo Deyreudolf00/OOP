@@ -1,0 +1,19 @@
+/*
+ * NegationToy.java
+ *
+ * Created on May 31, 2003, 4:10 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class NegationToy {
+    
+    /** Creates a new instance of NegationToy */
+    public NegationToy() {
+    }
+    
+}

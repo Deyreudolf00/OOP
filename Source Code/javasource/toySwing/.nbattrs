@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="ButtonSToy.java">
+        <attr name="class_dependency_java.awt.event.WindowAdapter" stringvalue="ButtonSToy.MyWindowListener"/>
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="ButtonSToy"/>
+    </fileobject>
+    <fileobject name="CardTest.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="CardTest"/>
+    </fileobject>
+</attributes>

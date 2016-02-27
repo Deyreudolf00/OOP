@@ -1,0 +1,88 @@
+/*
+ * EulerToy.java
+ *
+ * Created on May 25, 2003, 4:50 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class EulerToy {
+    
+
+    /** Creates a new instance of EulerToy */
+    
+    static void test(){
+       E e = new E(100); 
+       System.out.println("Sampai 100 suku e = "+e.get());
+       System.out.println("Math.E adalah "+Math.E);
+       System.out.println("Selisih = "+Math.abs(e.get()-Math.E));
+       
+       EXP exp = new EXP(5.0,100);
+       System.out.println("Sampai 100 suku exp(5.0) = "+exp.get());
+       System.out.println("Math.exp(5.0) adalah "+Math.exp(5.0));
+       System.out.println("Selisih = "+Math.abs(exp.get()-Math.exp(5.0)));
+    }
+    
+    static public void main(String[] args) {
+        test();
+    }
+    
+}
+
+class E{
+    private long current=1;
+
+    private double denom=1;
+    
+        
+    private double result=1;
+    
+    E(int n){
+        for(int i=0;i<n;i++) next();
+    }
+    
+    double get(){
+        return result;
+    }
+    
+    void next(){
+        denom *= current;
+        double term = 1/denom;
+        result += term;
+        current++;
+    }
+}
+
+class EXP{
+    private long current=1;
+    
+    private double x;
+    
+    private double powerX;
+    
+    private double denom=1;
+    
+    private double result=1;
+    
+    EXP(double x, int n){
+        this.x = x;
+        powerX = x;
+        for(int i=0;i<n;i++) next();
+    }
+    
+    double get(){
+        return result;
+    }
+    
+    void next(){
+        denom *= current;
+        double term = powerX/denom;
+        result += term;
+        powerX *= x;
+        current++;
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * PriorityQueue.java
+ *
+ * Created on June 7, 2003, 6:54 PM
+ */
+
+package colToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public interface PriorityQueue {
+    
+}

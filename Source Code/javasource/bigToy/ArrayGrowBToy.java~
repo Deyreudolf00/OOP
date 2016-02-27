@@ -1,0 +1,19 @@
+/*
+ * ArrayGrowBToy.java
+ *
+ * Created on May 26, 2003, 7:00 AM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ArrayGrowBToy {
+    
+    /** Creates a new instance of ArrayGrowBToy */
+    public ArrayGrowBToy() {
+    }
+    
+}

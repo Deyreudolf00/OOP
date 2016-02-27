@@ -1,0 +1,19 @@
+/*
+ * CharacterToy.java
+ *
+ * Created on June 1, 2003, 6:50 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class CharacterToy {
+    
+    /** Creates a new instance of CharacterToy */
+    public CharacterToy() {
+    }
+    
+}

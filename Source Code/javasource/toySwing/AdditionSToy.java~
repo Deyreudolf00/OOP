@@ -1,0 +1,19 @@
+/*
+ * AdditionSToy.java
+ *
+ * Created on May 26, 2003, 5:56 AM
+ */
+
+package toySwing;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class AdditionSToy {
+    
+    /** Creates a new instance of AdditionSToy */
+    public AdditionSToy() {
+    }
+    
+}

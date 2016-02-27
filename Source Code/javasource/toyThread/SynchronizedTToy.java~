@@ -1,0 +1,19 @@
+/*
+ * SynchronizedTToy.java
+ *
+ * Created on May 26, 2003, 6:28 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class SynchronizedTToy {
+    
+    /** Creates a new instance of SynchronizedTToy */
+    public SynchronizedTToy() {
+    }
+    
+}

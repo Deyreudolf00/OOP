@@ -1,0 +1,19 @@
+/*
+ * PopulationToy.java
+ *
+ * Created on June 8, 2003, 7:50 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class PopulationToy {
+    
+    /** Creates a new instance of PopulationToy */
+    public PopulationToy() {
+    }
+    
+}

@@ -1,0 +1,19 @@
+/*
+ * DoubleInputSToy.java
+ *
+ * Created on May 31, 2003, 3:51 PM
+ */
+
+package toySwing;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class DoubleInputSToy {
+    
+    /** Creates a new instance of DoubleInputSToy */
+    public DoubleInputSToy() {
+    }
+    
+}

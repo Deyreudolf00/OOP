@@ -1,0 +1,19 @@
+/*
+ * SuspendResumeJava2TToy.java
+ *
+ * Created on May 26, 2003, 6:30 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class SuspendResumeJava2TToy {
+    
+    /** Creates a new instance of SuspendResumeJava2TToy */
+    public SuspendResumeJava2TToy() {
+    }
+    
+}

@@ -1,0 +1,19 @@
+/*
+ * VectorToy.java
+ *
+ * Created on June 1, 2003, 9:31 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class VectorToy {
+    
+    /** Creates a new instance of VectorToy */
+    public VectorToy() {
+    }
+    
+}

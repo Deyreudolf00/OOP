@@ -1,0 +1,19 @@
+/*
+ * HelloWorldSToy.java
+ *
+ * Created on May 26, 2003, 6:00 AM
+ */
+
+package toySwing;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class HelloWorldSToy {
+    
+    /** Creates a new instance of HelloWorldSToy */
+    public HelloWorldSToy() {
+    }
+    
+}

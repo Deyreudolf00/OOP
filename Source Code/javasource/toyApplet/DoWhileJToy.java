@@ -1,0 +1,32 @@
+/*
+ * DoWhileJToy.java
+ *
+ * Created on May 26, 2003, 4:27 AM
+ */
+
+package toyApplet;
+import java.awt.Graphics;
+import javax.swing.JApplet;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ * Deitel
+ * Page 181-182
+ */
+
+public class DoWhileJToy extends javax.swing.JApplet {
+    
+    /** Creates a new instance of DoWhileJToy */
+    public DoWhileJToy() {
+    }
+    
+   public void paint (Graphics g) {
+      super.paint(g);
+      int counter = 1;
+      do {
+         g.drawOval(110-counter*10,110-counter*10,counter*20,counter*20);
+         counter++;
+      } while(counter<=10);
+   }
+}

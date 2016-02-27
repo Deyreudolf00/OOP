@@ -1,0 +1,19 @@
+/*
+ * CommandArgToy.java
+ *
+ * Created on May 25, 2003, 6:34 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class CommandArgToy {
+    
+    /** Creates a new instance of CommandArgToy */
+    public CommandArgToy() {
+    }
+    
+}

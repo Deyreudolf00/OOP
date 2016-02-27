@@ -1,0 +1,93 @@
+/*
+ * ListToy.java
+ *
+ * Created on June 6, 2003, 3:37 PM
+ */
+
+package colToy;
+import java.lang.IndexOutOfBoundsException;
+import java.util.Iterator;
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ListToy implements List{
+    private Object[] elements;
+    private int numberOfElements;
+    private int capacity;
+    
+    /** Creates a new instance of ListToy */
+    public ListToy(int capacity) {
+        this.capacity = capacity;
+        reset();
+    }
+    
+    private void reset(){
+        elements = new Object[capacity];
+        numberOfElements = 0;
+    }
+    
+    public void add(Object o) {
+        if (numberOfElements == capacity) expand();
+        elements[numberOfElements++] = o;
+    }
+    
+    public void add(int i, Object o) {
+        if (i<0 || i>=numberOfElements) throw new IndexOutOfBoundsException();
+        if (numberOfElements==capacity) expand();
+        for(int j=capacity;i>i;j--) elements[j] = elements[j-1];
+        elements[i] = o;
+        numberOfElements++;
+    }
+    
+    public void addAll(Listable l) {
+        ListToy other = (ListToy) l;
+        for (int i=0;i<other.capacity;i++) add(other.elements[i]);
+    }
+    
+    public void clear() {
+        reset();
+        // for(int i=0;i<capacity;i++) elements[i] = null;
+        // numberOfElements = 0;
+    }
+    
+    public boolean equals(Listable l) {
+        ListToy other = (ListToy) l;
+        if (capacity != other.capacity) return false;
+        for(int i=0;i<capacity;i++) 
+            if (!elements[i].equals(other.elements[i])) return false;
+        return true;
+    }
+    
+    public Object get(int i) {
+        if(i<0 || i>=numberOfElements) throw new IndexOutOfBoundsException();
+        return elements[i];
+    }
+    
+    public boolean isEmpty() {
+        return (numberOfElements==0);
+    }
+    
+    public void remove(int i) {
+        if(i<0 || i>=numberOfElements) throw new IndexOutOfBoundsException();
+        for(int j=i+1;j<numberOfElements;j++) elements[j-1] = elements[j];
+        numberOfElements--;
+        elements[numberOfElements] = null;
+    }
+    
+    public void set(int i, Object o) {
+        if(i<0 || i>=numberOfElements) throw new IndexOutOfBoundsException();
+        elements[i] = o;
+    }
+    
+    public Iterator iterator() {
+        return null;
+    }
+    
+    private void expand(){
+        capacity = capacity + 10 + (int)(.1 * capacity);
+        Object[] newElements = new Object[capacity];
+        for(int i=0;i<numberOfElements;i++) newElements[i] = elements[i];
+        elements = newElements;
+    }
+}

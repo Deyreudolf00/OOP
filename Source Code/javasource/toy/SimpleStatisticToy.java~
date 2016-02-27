@@ -1,0 +1,126 @@
+/*
+ * SimpleStatisticToy.java
+ *
+ * Created on May 21, 2003, 6:48 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ * Inspired by :
+ *  Theory and problems of programming with Pascal
+ *  Byron S. Gottriied, page 94
+ */
+
+public class SimpleStatisticToy {
+    
+    private double[] value;
+    
+    private double[] frequency;
+    
+    private double average = 0.0;
+    
+    private double std = 0.0;
+    
+    private double sum = 0.0;
+    
+    private double variance = 0.0;
+    
+    private double median = 0.0;
+    
+    private double modus = 0.0;
+    
+    private double mean = 0.0;
+    
+    private long population = 0;
+    
+    /** Creates a new instance of SimpleStatisticToy */
+    public SimpleStatisticToy() {
+    }
+    
+    public SimpleStatisticToy(double[] val, double[] freq){
+        this.value = val;
+        this.frequency = freq;
+        calcSum_Average();
+        calcStd_Variance();
+    }
+
+    private void calcSum_Average(){
+        for (int i=0;i<value.length;i++){
+            sum += (value[i] * frequency[i]);
+            population += frequency[i];
+        }
+        average = sum/population;
+    }
+    
+    private void calcStd_Variance(){
+        double sumOfSquare = 0.0;
+        for (int i=0;i<value.length;i++){
+            sumOfSquare += frequency[i] * (value[i]-average)*(value[i]-average);
+        }
+        variance = sumOfSquare/value.length;
+        std = Math.sqrt(sumOfSquare/value.length);
+    }
+    
+    public double getAverage() {
+        return average;
+    }
+    
+    public double getStd() {
+        return std;
+    }
+    
+    public double getMean() {
+        return mean;
+    }
+    
+    public double getSum() {
+        return sum;
+    }
+    
+    public double getMedian() {
+        return median;
+    }
+    
+    public double getModus() {
+        return modus;
+    }
+    
+    public void setFrequency(double[] frequency) {
+        this.frequency = frequency;
+    }
+    
+    public void setValue(double[] val) {
+        this.value = val;
+    }
+    
+    public String toString () {
+        String data = "DATA \n"+"Value     Frekuensi\n";
+        
+        for(int i=0;i<value.length;i++){
+            data += value[i] + "     " + frequency[i] + "\n";
+        }
+        data += "\n";
+        
+        String str = data +
+            "Hasil    :"+ "\n"+
+            "Total    :"+sum+"\n"+
+            "Populasi :"+population+"\n"+
+            "Rata-rata   = "+ average+"\n"+
+            "Std Deviasi = "+ std +"\n"+
+            "Variance    = "+ variance+"\n";
+            
+        return str;
+    }
+    
+    public static void main(String[] args) {
+        double[] value = {5,10,15,20,25};
+        double[] frequency = {10, 10, 10, 10, 10};
+        
+        SimpleStatisticToy t = new SimpleStatisticToy(value, frequency);
+        System.out.println(t);
+    }
+    
+}

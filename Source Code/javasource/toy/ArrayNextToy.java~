@@ -1,0 +1,19 @@
+/*
+ * ArrayNextToy.java
+ *
+ * Created on May 31, 2003, 2:58 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ArrayNextToy {
+    
+    /** Creates a new instance of ArrayNextToy */
+    public ArrayNextToy() {
+    }
+    
+}

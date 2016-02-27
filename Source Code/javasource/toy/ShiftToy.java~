@@ -1,0 +1,19 @@
+/*
+ * ShiftToy.java
+ *
+ * Created on May 31, 2003, 4:19 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ShiftToy {
+    
+    /** Creates a new instance of ShiftToy */
+    public ShiftToy() {
+    }
+    
+}

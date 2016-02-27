@@ -1,0 +1,35 @@
+/*
+ * CompanySupplierClass.java
+ *
+ * Created on May 7, 2003, 10:05 PM
+ */
+
+package commonToy.supplier;
+
+/**
+ *
+ * @author  unknown
+ */
+public class CompanySupplierClass extends SupplierClass {
+    
+    private CompanyClass company;
+    
+    private PersonClass contactPerson;
+    
+    /** Creates a new instance of CompanySupplierClass */
+    public CompanySupplierClass() {
+    }
+    
+    public void setCompany(CompanyClass newCompany) {
+    }
+    
+    public void setContactPerson(PersonClass newContactPerson) {
+    }
+    
+    public CompanyClass getCompany() {
+    }
+    
+    public void getContactPerson() {
+    }
+    
+}

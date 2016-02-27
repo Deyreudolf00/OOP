@@ -1,0 +1,19 @@
+/*
+ * colException.java
+ *
+ * Created on June 6, 2003, 1:11 AM
+ */
+
+package Templates.Classes;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class Class {
+    
+    /** Creates a new instance of colException */
+    public Class() {
+    }
+    
+}

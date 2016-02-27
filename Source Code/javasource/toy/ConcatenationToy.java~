@@ -1,0 +1,19 @@
+/*
+ * ConcatenationToy.java
+ *
+ * Created on May 31, 2003, 4:31 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ConcatenationToy {
+    
+    /** Creates a new instance of ConcatenationToy */
+    public ConcatenationToy() {
+    }
+    
+}

@@ -1,0 +1,15 @@
+/*
+ * Queueable.java
+ *
+ * Created on June 6, 2003, 6:28 AM
+ */
+
+package colToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public interface Queueable {
+    
+}

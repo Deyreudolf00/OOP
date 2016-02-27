@@ -1,0 +1,19 @@
+/*
+ * BigNumberToy.java
+ *
+ * Created on June 1, 2003, 7:03 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class BigNumberToy {
+    
+    /** Creates a new instance of BigNumberToy */
+    public BigNumberToy() {
+    }
+    
+}

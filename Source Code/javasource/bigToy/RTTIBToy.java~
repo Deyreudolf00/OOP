@@ -1,0 +1,19 @@
+/*
+ * Class.java
+ *
+ * Created on June 1, 2003, 9:13 AM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class Class {
+    
+    /** Creates a new instance of Class */
+    public Class() {
+    }
+    
+}

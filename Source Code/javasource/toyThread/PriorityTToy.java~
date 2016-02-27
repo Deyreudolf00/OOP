@@ -1,0 +1,19 @@
+/*
+ * PriorityTToy.java
+ *
+ * Created on May 26, 2003, 6:46 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class PriorityTToy {
+    
+    /** Creates a new instance of PriorityTToy */
+    public PriorityTToy() {
+    }
+    
+}

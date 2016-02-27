@@ -1,0 +1,19 @@
+/*
+ * PromotionToy.java
+ *
+ * Created on May 31, 2003, 4:34 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class PromotionToy {
+    
+    /** Creates a new instance of PromotionToy */
+    public PromotionToy() {
+    }
+    
+}

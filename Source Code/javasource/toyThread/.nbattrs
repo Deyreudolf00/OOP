@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="SynchronizedTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="Caller"/>
+    </fileobject>
+    <fileobject name="SuspendResumeJava2TToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="NewThread"/>
+    </fileobject>
+    <fileobject name="DemoNextTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="NewThread"/>
+    </fileobject>
+    <fileobject name="SynchronizedWrongTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="Caller"/>
+    </fileobject>
+    <fileobject name="PriorityTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="clicker"/>
+    </fileobject>
+    <fileobject name="MultiTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="NewThread"/>
+    </fileobject>
+    <fileobject name="DeadlockTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="DeadlockTToy"/>
+    </fileobject>
+    <fileobject name="SuspendResumeOldTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="NewThread"/>
+    </fileobject>
+    <fileobject name="JoinTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="NewThread"/>
+    </fileobject>
+    <fileobject name="DemoNextNextTToy.java">
+        <attr name="class_dependency_java.lang.Thread" stringvalue="NewThread"/>
+    </fileobject>
+    <fileobject name="ProducerConsumerTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="Producer;Consumer"/>
+    </fileobject>
+    <fileobject name="ProducerConsumerWrongTToy.java">
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="Producer;Consumer"/>
+    </fileobject>
+</attributes>

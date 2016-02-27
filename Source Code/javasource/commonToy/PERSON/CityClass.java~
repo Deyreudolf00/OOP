@@ -1,0 +1,51 @@
+/*
+ * CityClass.java
+ *
+ * Created on May 7, 2003, 8:59 PM
+ */
+
+package person;
+
+/**
+ *
+ * @author  unknown
+ */
+public class CityClass {
+    
+    private String name;
+    
+    private ProvinceClass province;
+    
+    private CountryClass country;
+    
+    private String localeCode;
+    
+    /** Creates a new instance of CityClass */
+    public CityClass() {
+    }
+    
+    public void setName(String newName) {
+    }
+    
+    public void setProvince(ProvinceClass newProvince) {
+    }
+    
+    public void setCountry() {
+    }
+    
+    public void setLocaleCode(String newLocaleCode) {
+    }
+    
+    public String getName() {
+    }
+    
+    public ProvinceClass getProvince() {
+    }
+    
+    public CountryClass getCountry() {
+    }
+    
+    public String getLocaleCode() {
+    }
+    
+}

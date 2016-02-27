@@ -1,0 +1,19 @@
+/*
+ * DemoTToy.java
+ *
+ * Created on May 26, 2003, 6:38 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class DemoTToy {
+    
+    /** Creates a new instance of DemoTToy */
+    public DemoTToy() {
+    }
+    
+}

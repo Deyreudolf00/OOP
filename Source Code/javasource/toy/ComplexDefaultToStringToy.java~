@@ -1,0 +1,19 @@
+/*
+ * ComplexDefaultToStringToy.java
+ *
+ * Created on June 1, 2003, 5:57 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ComplexDefaultToStringToy {
+    
+    /** Creates a new instance of ComplexDefaultToStringToy */
+    public ComplexDefaultToStringToy() {
+    }
+    
+}

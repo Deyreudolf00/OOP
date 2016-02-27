@@ -1,0 +1,19 @@
+/*
+ * SynchronizedWrongTToy.java
+ *
+ * Created on May 26, 2003, 6:33 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class SynchronizedWrongTToy {
+    
+    /** Creates a new instance of SynchronizedWrongTToy */
+    public SynchronizedWrongTToy() {
+    }
+    
+}

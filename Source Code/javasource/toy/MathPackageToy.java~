@@ -1,0 +1,19 @@
+/*
+ * MathPackageToy.java
+ *
+ * Created on June 1, 2003, 6:44 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class MathPackageToy {
+    
+    /** Creates a new instance of MathPackageToy */
+    public MathPackageToy() {
+    }
+    
+}

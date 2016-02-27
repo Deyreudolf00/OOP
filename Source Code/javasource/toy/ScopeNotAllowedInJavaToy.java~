@@ -1,0 +1,19 @@
+/*
+ * ScopeNotAllowedInJavaToy.java
+ *
+ * Created on May 31, 2003, 4:44 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ScopeNotAllowedInJavaToy {
+    
+    /** Creates a new instance of ScopeNotAllowedInJavaToy */
+    public ScopeNotAllowedInJavaToy() {
+    }
+    
+}

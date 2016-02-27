@@ -1,0 +1,19 @@
+/*
+ * BitwiseToy.java
+ *
+ * Created on May 31, 2003, 4:16 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class BitwiseToy {
+    
+    /** Creates a new instance of BitwiseToy */
+    public BitwiseToy() {
+    }
+    
+}

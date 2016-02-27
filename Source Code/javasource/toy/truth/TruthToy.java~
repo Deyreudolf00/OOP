@@ -1,0 +1,19 @@
+/*
+ * TruthToy.java
+ *
+ * Created on June 15, 2003, 5:45 AM
+ */
+
+package toy.truth;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class TruthToy {
+    
+    /** Creates a new instance of TruthToy */
+    public TruthToy() {
+    }
+    
+}

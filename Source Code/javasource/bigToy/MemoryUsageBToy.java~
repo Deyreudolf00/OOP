@@ -1,0 +1,19 @@
+/*
+ * MemoryUsageBToy.java
+ *
+ * Created on June 1, 2003, 9:23 AM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class MemoryUsageBToy {
+    
+    /** Creates a new instance of MemoryUsageBToy */
+    public MemoryUsageBToy() {
+    }
+    
+}

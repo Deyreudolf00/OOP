@@ -1,0 +1,19 @@
+/*
+ * ParseToy.java
+ *
+ * Created on June 1, 2003, 6:55 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ParseToy {
+    
+    /** Creates a new instance of ParseToy */
+    public ParseToy() {
+    }
+    
+}

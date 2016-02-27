@@ -1,0 +1,73 @@
+/*
+ * HanoiTowerToy.java
+ *
+ * Created on May 24, 2003, 12:20 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ * Inspired by :
+ *  Theory and problems of programming with Pascal
+ *  Byron S. Gottriied, page 155
+ *
+ *
+ *  Java : How to Program
+ *  Deitel Deitel, page 276, exercise 6.37
+ *
+ */
+
+public class HanoiTowerToy {
+    
+    private int nrOfDisk = 0;
+    
+    private char originPole = 'A';
+    
+    private char destPole = 'B';
+    
+    private char otherPole = 'C';
+    
+    private String str = "";
+    
+    /** Creates a new instance of HanoiTowerToy */
+    public HanoiTowerToy(int nrOfDisk) {
+        this.nrOfDisk = nrOfDisk;
+    }
+    
+    private void diskMove(char originPole, char destPole) {
+        str += "Pindahkan dari "+originPole+" ke "+destPole+"\n";
+    }
+    
+    private void blockMove(int nrOfDisk, char originPole, char destPole, char otherPole){
+        if (nrOfDisk>0) {
+            blockMove(nrOfDisk-1,originPole,otherPole,destPole);
+            diskMove(originPole,destPole);
+            blockMove(nrOfDisk-1,otherPole,destPole,originPole);
+        } 
+    }
+    
+    public void transfer() {
+        blockMove(nrOfDisk,originPole,destPole,otherPole);
+    }
+    
+    public String toString(){
+        str = 
+            "Menara Hanoi dengan "+nrOfDisk+" piringan \n" + 
+            "Asal : "+originPole+" Tujuan : "+destPole+" Perantara : "+otherPole+"\n"+
+            str;
+        return str;
+    }
+   
+    static void test(){
+        HanoiTowerToy t = new HanoiTowerToy(3);
+        t.transfer();
+        System.out.println(t);
+    }
+    
+    public static void main(String[] args) {
+        test();
+    }
+    
+}

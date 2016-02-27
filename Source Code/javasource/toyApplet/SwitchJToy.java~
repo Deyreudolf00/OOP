@@ -1,0 +1,19 @@
+/*
+ * SwitchJToy.java
+ *
+ * Created on June 3, 2003, 6:35 AM
+ */
+
+package toyApplet;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class SwitchJToy extends javax.swing.JApplet {
+    
+    /** Creates a new instance of SwitchJToy */
+    public SwitchJToy() {
+    }
+    
+}

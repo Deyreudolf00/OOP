@@ -1,0 +1,19 @@
+/*
+ * DeadlockTToy.java
+ *
+ * Created on May 26, 2003, 6:18 AM
+ */
+
+package toyThread;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class DeadlockTToy {
+    
+    /** Creates a new instance of DeadlockTToy */
+    public DeadlockTToy() {
+    }
+    
+}

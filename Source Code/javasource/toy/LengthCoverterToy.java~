@@ -1,0 +1,44 @@
+/*
+ * Class.java
+ *
+ * Created on June 8, 2003, 6:55 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ * Inspired by 
+ * C. Thomas Wu, An Introduction to Object Oriented Programming with Java
+ * Page 131, exercise 8
+ */
+public class LengthCoverterToy {
+    private double cm;
+    
+    /** Creates a new instance of Class */
+    public LengthCoverterToy(double cm) {
+        this.cm = cm;
+    }
+    
+    public double getDecimeter(){
+        return (0.1 * cm);
+    }
+    
+    public String ToString(){
+        String str = 
+         "Centimeter  = "+cm+"\n"+
+         "Decimeter   = "+getDecimeter()+"\n";
+        return str;
+    }
+    
+    static void test(){
+        LengthConverterToy t = new LengthCoverterToy(100);
+        System.out.println(t);
+    }
+    
+    public static void main(String[] args){
+        test();
+    }
+    
+}

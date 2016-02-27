@@ -1,0 +1,38 @@
+/*
+ * FileBToy.java
+ *
+ * Created on June 1, 2003, 8:19 PM
+ */
+
+package abook.ajava.systemToy;
+import java.io.File;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class FileBToy {
+    
+    /** Creates a new instance of FileBToy */
+    public FileBToy() {
+    }
+    
+    static void test(){
+	File t = new File("C:/Autoexec.bat");
+	System.out.println("Nama file    : " + t.getName());
+	System.out.println("Path         : " + t.getPath());
+	System.out.println("Path absolut : " + t.getAbsolutePath());
+	System.out.println("Induk        : " + t.getParent());
+	System.out.println(t.exists() ? "Ada" : "Tidak ada");	
+	System.out.println(t.canWrite() ? "Dapat Ditulisi" : "Tidak Dapat Ditulisi");	
+	System.out.println(t.canRead() ? "Dapat Dibaca" : "Tidak Dapat Dibaca");
+	System.out.println(t.isDirectory() ? "Direktori" : "Bukan Direktori");	
+	System.out.println(t.isFile() ? "File Biasa" : "Bukan File Biasa");
+	System.out.println("Modifikasi terakhir : " + t.lastModified() );
+	System.out.println("Ukuran file         : " + t.length());
+      }
+    
+    public static void main (String args[]) {
+        test();
+    }
+}

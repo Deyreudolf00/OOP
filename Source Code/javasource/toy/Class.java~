@@ -1,0 +1,19 @@
+/*
+ * Class.java
+ *
+ * Created on June 8, 2003, 6:55 AM
+ */
+
+package Templates.Classes;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class Class {
+    
+    /** Creates a new instance of Class */
+    public Class() {
+    }
+    
+}

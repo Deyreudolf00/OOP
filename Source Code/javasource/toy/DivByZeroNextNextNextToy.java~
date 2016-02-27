@@ -1,0 +1,19 @@
+/*
+ * DivByZeroNextNextNextToy.java
+ *
+ * Created on June 1, 2003, 7:17 AM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class DivByZeroNextNextNextToy {
+    
+    /** Creates a new instance of DivByZeroNextNextNextToy */
+    public DivByZeroNextNextNextToy() {
+    }
+    
+}

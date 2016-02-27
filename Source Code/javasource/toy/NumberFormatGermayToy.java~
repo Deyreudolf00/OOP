@@ -1,0 +1,19 @@
+/*
+ * NumberFormatGermayToy.java
+ *
+ * Created on May 31, 2003, 3:57 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class NumberFormatGermayToy {
+    
+    /** Creates a new instance of NumberFormatGermayToy */
+    public NumberFormatGermayToy() {
+    }
+    
+}

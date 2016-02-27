@@ -1,0 +1,19 @@
+/*
+ * ReadlineBToy.java
+ *
+ * Created on June 1, 2003, 9:00 PM
+ */
+
+package bigToy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ReadlineBToy {
+    
+    /** Creates a new instance of ReadlineBToy */
+    public ReadlineBToy() {
+    }
+    
+}

@@ -1,0 +1,165 @@
+/*
+ * BSTToy.java
+ * Binary Search Tree
+ * Created on June 6, 2003, 12:48 AM
+ */
+
+package colToy;
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+
+
+public class BSTToy {
+    private BSTNode root;
+    
+    /** Creates a new instance of BSTToy */
+    public BSTToy() {
+        root = null;
+    }
+    
+    public BSTNode search(Comparable target){
+        BSTNode p = root;
+        while (p != null) {
+            int comp = p.c.compareTo(target);
+            if (comp == 0) return p;
+            else if (comp < 0) {
+                p = p.lchild;
+            } else {
+                p = p.rchild;
+            }
+        }
+        return null;
+    }
+    
+    public void insertNode(Comparable c) throws DuplicateException{
+        BSTNode n = new BSTNode(c);
+        insertNode(n);
+    }
+    
+    public void insertNode(BSTNode n) throws DuplicateException{
+        if (root==null){
+            root = n;
+        } else {
+            BSTNode p = root;
+            BSTNode prev = null;
+            while (p != null) {
+                prev = p;
+                int comp = p.c.compareTo(n.c);
+                if (comp == 0) throw (new DuplicateException());
+                else if (comp < 0) {
+                    p = p.lchild;
+                } else {
+                    p = p.rchild;
+                }
+            }
+            
+            if (prev.c.compareTo(n.c) < 0) {
+                prev.lchild = n;
+            } else {
+                prev.rchild = n;
+            }
+        }
+    }
+    
+    public BSTNode maximum() {
+        if (root == null) return null;
+        BSTNode p = root;
+        BSTNode prev = null;
+        while (p != null) {
+            prev = p;
+            p = p.lchild;
+        }
+        return prev;
+    }
+    
+    public BSTNode minimum() {
+        if (root == null) return null;
+        BSTNode p = root;
+        BSTNode prev = null;
+        while (p != null) {
+            prev = p;
+            p = p.rchild;
+        }
+        return prev;
+    }
+    
+    private void printAllInorder(BSTNode n){
+        if (n!=null){
+            printAllInorder(n.lchild);
+            System.out.println(n+" ");
+            printAllInorder(n.rchild);
+        } 
+    }
+    
+    private void printAllPreorder(BSTNode n){
+        if (n!=null){
+            System.out.println(n+" ");
+            printAllPreorder(n.lchild);
+            printAllPreorder(n.rchild);
+        } 
+    }
+    
+    private void printAllPostorder(BSTNode n){
+        if (n!=null){
+            printAllPostorder(n.lchild);
+            printAllPostorder(n.rchild);
+            System.out.println(n+" ");
+        } 
+    }
+    
+    static void test02(){
+        BSTToy t = new BSTToy();
+        try {
+            t.insertNode(new Integer(5));
+            t.insertNode(new Integer(2));
+            t.insertNode(new Integer(7));
+            t.insertNode(new Integer(9));
+            t.insertNode(new Integer(28));
+            t.insertNode(new Integer(1));
+            System.out.println("Inorder");
+            t.printAllInorder(t.root);
+            System.out.println("Preorder");
+            t.printAllPreorder(t.root);
+            System.out.println("Postorder");
+            t.printAllPostorder(t.root);
+            System.out.println("Nilai terbesar : ");
+            System.out.println(t.maximum());
+            System.out.println("Nilai terkecil : ");
+            System.out.println(t.minimum());
+        } catch (DuplicateException e){
+            System.out.println("Terjadi duplikasi");
+        }
+    }
+    
+    static void test01(){
+        BSTToy t = new BSTToy();
+        try {
+            t.insertNode(new BSTNode(new Integer(5)));
+            t.insertNode(new BSTNode(new Integer(2)));
+            t.insertNode(new BSTNode(new Integer(7)));
+            t.insertNode(new BSTNode(new Integer(9)));
+            t.insertNode(new BSTNode(new Integer(28)));
+            t.insertNode(new BSTNode(new Integer(1)));
+            System.out.println("Inorder");
+            t.printAllInorder(t.root);
+            System.out.println("Preorder");
+            t.printAllPreorder(t.root);
+            System.out.println("Postorder");
+            t.printAllPostorder(t.root);
+            System.out.println("Nilai terbesar : ");
+            System.out.println(t.maximum());
+            System.out.println("Nilai terkecil : ");
+            System.out.println(t.minimum());
+        } catch (DuplicateException e){
+            System.out.println("Terjadi duplikasi");
+        }
+    }
+
+    public static void main(String[] args){
+    //    test01();
+        test02();
+    }
+    
+}

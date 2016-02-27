@@ -1,0 +1,19 @@
+/*
+ * WelcomeJToy.java
+ *
+ * Created on May 26, 2003, 4:41 AM
+ */
+
+package toyApplet;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class WelcomeJToy extends javax.swing.JApplet {
+    
+    /** Creates a new instance of WelcomeJToy */
+    public WelcomeJToy() {
+    }
+    
+}

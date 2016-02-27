@@ -1,0 +1,19 @@
+/*
+ * ConditionalToy.java
+ *
+ * Created on May 31, 2003, 4:25 PM
+ */
+
+package toy;
+
+/**
+ *
+ * @author  Bambang Hariyanto,Ir.MT
+ */
+public class ConditionalToy {
+    
+    /** Creates a new instance of ConditionalToy */
+    public ConditionalToy() {
+    }
+    
+}
